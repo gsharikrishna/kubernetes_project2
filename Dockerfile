@@ -1,12 +1,12 @@
 FROM nginx:latest
 
-COPY todo.html /usr/share/nginx/html/
+COPY index.html /usr/share/nginx/html/
 
 
 EXPOSE 80
 
 # Verify file permissions
-RUN chmod 644 /usr/share/nginx/html/todo.html 
+RUN chmod 644 /usr/share/nginx/html/index.html 
      
 
 # Start Nginx when the container 

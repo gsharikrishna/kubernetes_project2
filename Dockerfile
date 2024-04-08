@@ -9,5 +9,5 @@ EXPOSE 80
 RUN chmod 644 /usr/share/nginx/html/todo.html 
      
 
-# Start Nginx when the container launches
+# Start Nginx when the container 
 CMD ["nginx", "-g", "daemon off;"]
